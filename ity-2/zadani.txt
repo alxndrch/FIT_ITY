@@ -1,0 +1,26 @@
+ITY - Projekt è. 2 - Sazba dokumentù s matematickými výrazy
+-----------------------------------------------------------
+rozmìry stránky: A4
+rozmìry textové oblasti: 18x25cm
+mezera vlevo: 1.5cm
+mezera nahoøe: 2.5cm
+font: times 11pt (vzorový dokument pou¾ívá kódování fontù IL2)
+
+Poznámky: 
+- Na titulní stranì uveïte své jméno a login.
+
+- Vzorový dokument byl vysázen LaTeXem na ¹kolním serveru merlin nástrojem: pdflatex (pozor na køí¾ové odkazy v textu, které jsou závislé na správném u¾ití daných nástrojù pro sázení pdf)
+  
+- Text vysázejte podle vzorového dokumentu.
+
+- Z AmS balíkù byly pou¾ity pøíkazy \newtheorem a dal¹í pøíkazy pro sázení speciálních symbolù.
+
+- Návì¹tí definic, vìt a dùkazù, dále èíslování nadpisù a vzorcù, stejnì jako vytváøení odkazù na nì je potøeba sázet pomocí vhodných LaTeXových  prostøedkù, nikoli ruènì.
+
+- Nezapomeòte na správné zarovnání rovnic pod sebe.
+
+- Samozøejmì zde nesmí chybìt správnì vysázené prvky, které jste se nauèili v 1. projektu.
+
+- Pozornì ètìte text v zadaném pdf, mù¾e vám být nápomocný k úspì¹nému øe¹ení projektu.
+
+- Odevzdává se pouze zdrojový text dokumentu a soubor Makefile pro pøeklad. 
