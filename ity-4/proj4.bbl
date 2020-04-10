@@ -1,0 +1,58 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{web:medium}
+Davídek, K.: LaTeX -- Co, proč a jak. [Online], [rev. 2019-01-29], [cit.
+  2020-04-10].
+\newline\urlprefix\url{https://link.medium.com/WWpl7GddA5}
+
+\bibitem{thesis:history}
+Divila, J.: \emph{Revizní systém pro LaTeX}. Diplomov� pr�ce, Vysoké učení
+  technické v Brně, 2010.
+
+\bibitem{article:math}
+Ferreira, M.; Ren, G.: Möbius gyrogroups: A Clifford algebra approach.
+  \emph{Journal of Algebra}, ro�n�k 328, �.~1, 2011: s. 230--253, ISSN
+  0021-8693.
+
+\bibitem{web:math}
+Kalvoda, T.: Jak psát matematické formule v LaTeXu. [Online], [rev.
+  2018-10-26], [cit. 2020-04-10].
+\newline\urlprefix\url{https://marast.fit.cvut.cz/cs/blog_posts/2}
+
+\bibitem{article:map}
+Kozubík, A.: Mapy v LaTeXových dokumentoch -- predstavenie balíčka getmap.
+  \emph{Zpravodaj Československého sdružení uživatelů Texu}, ro�n�k~27,
+  �. 1--2, 2017: s. 101--109, ISSN 1211-6661.
+
+\bibitem{thesis:python}
+Luňáček, E.: \emph{Modelování vlastností mikroelektronických struktur}.
+  Diplomov� pr�ce, Vysoké učení technické v Brně, 2009.
+
+\bibitem{web:table}
+Moravec, Z.: LaTeX 5. -- Tabulky a boxy. [Online], [rev. 2015-06-22], [cit.
+  2020-04-10].
+\newline\urlprefix\url{http://programujte.com/clanek/2015020700-latex-5-tabulky-a-boxy/}
+
+\bibitem{book:rybicka}
+Rybička, J.: \emph{LaTeX pro začátečníky}, kapitola~10. Konvoj, t�et�
+  vyd�n�, 2003, ISBN 80-7302-049-1, str. 239.
+
+\bibitem{book:python}
+Severance, C.~R.: \emph{Python for everybody: exploring data in Python 3},
+  kapitola~10. CreateSpace Independent Publishing Platform, 2016, ISBN
+  978-1530051120, str. 244.
+
+\bibitem{article:table}
+Xiao, L.-Y.; Shao, W.; Yao, Z.-X.; aj.: Data Mining Techniques in Artificial
+  Neural Network for UWB Antenna Design. \emph{Radioengineering}, ro�n�k~27,
+  �.~1, 2018: s. 70--78, ISSN 1210-2512.
+
+\end{thebibliography}
