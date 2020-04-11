@@ -6,7 +6,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage{graphicx}
-\usepackage{amsmath,amsthm,amsfonts}
 \usepackage{array}
 \usepackage[procnames]{listings}
 \usepackage{color}
@@ -31,15 +30,15 @@
     {\Large \today \hfill Alexandr Chalupnik (xchalu15)}
 \end{titlepage}
 
-\section{Tvorba dokumentů v sysému \LaTeX{}}
+\section{Tvorba dokumentů v~systému \LaTeX{}}
 \subsection{Co je to \LaTeX{}}
-Za LaTeX lze v širší rovině považovat typografický systém, který je primárně určen k sazbě vědeckých a matematických dokumentů vysoké typografické kvality. Tento systém je každopádně vhodný i pro tvorbu rozličných dokumentů jako jsou například jednoduché vizitky nebo několikasetstránkové knihy.\cite{web:medium}
+Za LaTeX lze v~širší rovině považovat typografický systém, který je primárně určen k~sazbě vědeckých a~matematických dokumentů vysoké typografické kvality. Tento systém je každopádně vhodný i pro tvorbu rozličných dokumentů jako jsou například jednoduché vizitky nebo několikasetstránkové knihy.\cite{web:medium}
 
 \subsection{Historie}
-Předchůdcem \LaTeX{}u od Leslie Lamporta byl sázecí systém \TeX, který vytvořit profesor Donald Knuth kolem roku 1983. \TeX umožňoval svým uživatelům jednoduchou sazbu textu a zejména matematických rovnic. \cite{thesis:history} 
+Předchůdcem \LaTeX{}u od Leslie Lamporta byl sázecí systém \TeX, který vytvořil profesor Donald Knuth kolem roku 1983. \TeX umožňoval svým uživatelům jednoduchou sazbu textu a zejména matematických rovnic. \cite{thesis:history} 
 
 \subsection{Sázení tabulek}
-Pokud chceme vysázet tabulku, můžeme použít dvě prostředí. Jedním z nich je \verb|tabbing|, které lze přirovnat k tabelačním zarážkám, které tvoří tabulku tím že zarovnávají sloupce. Druhým prostředím je \verb|tabular|, které slouží k tvorbě složitějších tabulek. \cite{web:table}
+Pokud chceme vysázet tabulku, můžeme použít dvě prostředí. Jedním z~nich je \verb|tabbing|, které lze přirovnat k~tabelačním zarážkám, které tvoří tabulku tím že zarovnávají sloupce. Druhým prostředím je \verb|tabular|, které slouží k~tvorbě složitějších tabulek. \cite{web:table}
 
 \renewcommand{\arraystretch}{1.5}
 \begin{table}[h!] \catcode`\-=12
@@ -61,8 +60,8 @@ Pokud chceme vysázet tabulku, můžeme použít dvě prostředí. Jedním z nic
 
 
 \subsection{Sázení vzorců}
-Jedním z důvodů proč je \LaTeX{} oblíbený, je právě možnost velmi propracovaného a jednoduchého sázení matematických výraz. Pro sázení existuje několik prostředí.\cite{book:rybicka}
-V případě, že se vzorec zapisuje uvnitř odstavce, používá se pro oddělení matematického prostředí znak \verb|$|. Pokud má být vzorec sázen na samostatný řádek, odděluje se symboly \verb|\[| \dots \verb|\]| nebo \verb|$$| \dots \verb|$$|. Dalším možným prostředím je \verb|eqnarray|, to je určeno pro sazbu posloupnosti vzorců pod sebe.\cite{web:math} Příklad vysázení rovnice na samostatný řádek\cite{article:math}:
+Jedním z~důvodů proč je \LaTeX{} oblíbený, je právě možnost velmi propracovaného a jednoduchého sázení matematických výrazů. Pro sázení existuje několik prostředí.\cite{book:rybicka}
+V~případě, že se vzorec zapisuje uvnitř odstavce, používá se pro oddělení matematického prostředí znak \verb|$|. Pokud má být vzorec sázen na samostatný řádek, odděluje se symboly \verb|\[| \dots \verb|\]| nebo \verb|$$| \dots \verb|$$|. Dalším možným prostředím je \verb|eqnarray|, to je určeno pro sazbu posloupnosti vzorců pod sebe.\cite{web:math} Příklad vysázení rovnice na samostatný řádek\cite{article:math}:
 
 $$
 a \oplus b = 
@@ -72,13 +71,13 @@ $$
 
 
 \subsection{Vkládání map}
-\LaTeX{} dokonce umožňuje vkládání map do dokumentu. Slouží k tomu balíček \verb|getmap|, který získává mapy z externích zdrojů jako jsou OpenStreetMap nebo Google Maps včetně podpory Google StreetVeiw. 
-Pro získání mapy slouží příkaz ve tvaru \verb|\getmap[volby]{adresa}|. Získanou mapu vložíme do dokumentu pomocí příkazu \verb|\includegraphics|, který nalezneme v balíčku \verb|graphicx|. Pro správnou činnosti příkazu \verb|getmap| je potřebné dokument kompilovat s přepínačme \verb|--shell-escape|.\cite{article:map}
+\LaTeX{} dokonce umožňuje vkládání map do dokumentu. Slouží k~tomu balíček \verb|getmap|, který získává mapy z~externích zdrojů jako jsou OpenStreetMap nebo Google Maps včetně podpory Google StreetVeiw. 
+Pro získání mapy slouží příkaz ve tvaru \verb|\getmap[volby]{adresa}|. Získanou mapu vložíme do dokumentu pomocí příkazu \verb|\includegraphics|, který nalezneme v~balíčku \verb|graphicx|. Pro správnou činnosti příkazu \verb|getmap| je potřebné dokument kompilovat s~přepínačme \verb|--shell-escape|.\cite{article:map}
 
 \newpage
 \subsection{Vkládání algoritmů}
-Pro sázení algoritmů a ukázek kódů v některém programovacím jazyce, je možné využít jeden ze tří balíčků: \verb|argorthm|, \verb|algorithm2e| a \verb|listings|.
-Ukázka kódu v jazyce Python pomocí balíčku \verb|listings| \cite{book:python}:
+Pro sázení algoritmů a ukázek kódů v~některém programovacím jazyce, je možné využít jeden ze tří balíčků: \verb|argorthm|, \verb|algorithm2e| a \verb|listings|.
+Ukázka kódu v~jazyce Python pomocí balíčku \verb|listings| \cite{book:python}:
 
 %https://python.g-node.org/python-summerschool-2009/python_code_in_latex.html
 \definecolor{keywords}{RGB}{255,0,90}
@@ -103,7 +102,7 @@ except:
     print('Please enter a number')
 \end{lstlisting}
 
-Python je populární programovací jazyk, který má mnoho využití. Lze ho použít pro tvorbu webových aplikací, pro vizualizaci dat a numerické výpočty. Díky sve jednoduchosti je často využíván při výuce programování.\cite{thesis:python}
+Python je populární programovací jazyk, který má mnoho využití. Lze ho použít pro tvorbu webových aplikací, pro vizualizaci dat nebo pro numerické výpočty. Díky své jednoduchosti je často využíván při výuce programování.\cite{thesis:python}
 
 \bibliographystyle{czechiso}
 \renewcommand{\refname}{Literatura}

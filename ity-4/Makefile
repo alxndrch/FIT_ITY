@@ -20,7 +20,7 @@ zip:
 	zip $(OUT) $(FILE).tex Makefile $(FILE).bib czechiso.bst
 
 clean:
-	rm -f $(FILE).aux $(FILE).dvi $(FILE).ps $(FILE).log
+	rm -f $(FILE).aux $(FILE).dvi $(FILE).ps $(FILE).log $(FILE).bbl $(FILE).blg
 
 clean-all: clean
 	rm -f $(FILE).pdf
